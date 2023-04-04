@@ -9,34 +9,38 @@ h2 {
   color: #283747;
 }
 
-#contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background: #9E4735; 
-  }
-
-  nav ul {
-    list-style: none;
-    overflow: hidden;
-    transition: 1s; 
-  }
-  
-  nav ul li {
-    float: left;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    padding-left: 30px;
-    font-weight: bold;
-    transition: 2s;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-
 /*HEADER*/
+
+#contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #9E4735; 
+}
+
+nav.navbar {
+  width: 60%;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  transition: 1s; 
+}
+
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  padding-right: 30px;
+  font-weight: bold;
+  transition: 2s;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
 
   header li:hover {
     font-size: 28px;
@@ -51,19 +55,17 @@ h2 {
     margin-bottom: 0;
   }
 
-  .logo img{
-    height: 100px;
-    width: 130px;
-    max-width: 200px;
-    
+  div.logo {
+    text-align: start;
+    align-items: center;
+    justify-content: center;
+    max-width: 100px;
   }
-
+     
   div.carrito {
     text-align-last: end;
     align-items: center;
     justify-content: center;
-    padding-right: 0%; 
-    max-width: 200px; 
   }
 
   /*CONTENIDO MID*/
@@ -106,12 +108,12 @@ h2 {
     border-bottom: solid 2px #513d38;
   }
 
-  div.container{
+  .container{
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 0;
+    justify-content: space-evenly;
   }
 
   .productos{
@@ -119,7 +121,7 @@ h2 {
     width:fit-content;
     background-color: #d7cabd;
     margin-bottom: 24px;
-    margin: 30px auto ;
+    margin: 30px 50px ;
   }
 
 main {
@@ -132,6 +134,7 @@ main {
   text-align: center;
   justify-content: center;
   color: oldlace;
+  text-shadow: 2px 3px 2px slategray;
   border-top: solid 2px #283747;
   background-color: #9E4735;
   padding-bottom: 20px;
@@ -152,6 +155,40 @@ main {
   padding: 4px;
   background-color: #e3e287;
   font-weight: bolder;
+}
+
+.ov-btn-grow-box {
+  background: #ffae00; /* color de fondo */
+  color: black; /* color de fuente */
+  font-weight: bolder;
+  border: 2px solid black; /* tamaño y color de borde */
+  padding: 16px 20px;
+  border-radius: 3px; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+.ov-btn-grow-box:hover {
+  color: #fff;/* color de fuente hover */
+}
+.ov-btn-grow-box::after {
+  content: "";
+  background: brown; /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: scale(0, 0);
+  transition: all 0.3s ease;
+}
+.ov-btn-grow-box:hover::after {
+  transition: all 0.3s ease-out;
+  transform: scale(1, 1);
 }
 
 /*FORMULARIOS*/
@@ -219,16 +256,6 @@ textarea#msg {
   margin-top: 0;
 }
 
-#boton {
-  margin-top: 8px;
-  margin-bottom: 20px;
-  width: 30%;
-  height: 4%;
-  background-color: #ad691a;
-  color: black;
-  font-weight: bolder;
-}
-
 .titproduct-ind h2 {
   color: beige;
   font-size: 28px;
@@ -240,4 +267,53 @@ textarea#msg {
   background-color: #5e0a0a;
   padding-bottom: 10px;
   border-bottom: solid 2px #513d38;
+}
+
+@media (max-width: 1280px) {
+  .logo {
+    margin-left: 40px;
+    width: 20%;
+  }
+}
+
+@media (max-width: 1028px) {
+  nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    padding-right: 30px;
+    font-weight: bold;
+    transition: 2s;
+  }
+}
+
+@media (max-width: 872) {
+  nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding-right: 30px;
+    font-weight: bold;
+    transition: 2s;
+  }
+}
+
+@media (max-width: 850) {
+  nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding-right: 30px;
+    font-weight: bold;
+    transition: 2s;
+  }
+}
+
+#titulo {
+  text-transform: uppercase;
+  color: rgb(71, 48, 48);
+  text-shadow: 1px 2px 2px sandybrown;
+  font-size: 24px;
+  align-items: center;
+  margin-bottom: 0;
 }
