@@ -1,4 +1,4 @@
-body {
+body.structure {
     background-color: bisque;
     color: #784212;
     margin-right: 0px;
@@ -11,6 +11,8 @@ h2 {
 
 /*HEADER*/
 
+
+
 #contenedor {
   display: flex;
   align-items: center;
@@ -18,8 +20,22 @@ h2 {
   background: #9E4735; 
 }
 
+.navbar-toggler {
+  color: antiquewhite !important;
+} 
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: whitesmoke !important;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+background: #9E4735 !important;
+justify-content: center !important;
+margin-left: 30px !important;
+}
+
 nav.navbar {
-  width: 60%;
+  justify-content: center;
 }
 
 nav ul {
@@ -269,6 +285,9 @@ textarea#msg {
   border-bottom: solid 2px #513d38;
 }
 
+
+
+/*
 @media (max-width: 1280px) {
   .logo {
     margin-left: 40px;
@@ -317,3 +336,6 @@ textarea#msg {
   align-items: center;
   margin-bottom: 0;
 }
+
+*/
+
