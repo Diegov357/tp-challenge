@@ -60,17 +60,64 @@ img.w-100.d-block{
 }
 
 .carousel-control-next {
-  background-color: red !important;
-  opacity: 90%;
+  background-color: grey !important;
+  opacity: 30% !important;
+}
+
+.carousel-control-next:hover {
+  color: #ff0000 !important;/* color de fuente hover */
+}
+
+.carousel-control-next::after {
+  content: "";
+  background: brown; /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: scale(0, 0);
+  transition: all 0.3s ease;
+}
+.carousel-control-next:hover::after {
+  transition: all 0.3s ease-out;
+  transform: scale(1, 1);
 }
 
 .carousel-control-prev  {
-  background-color: blue !important;
-  opacity: 90%;
+  background-color: grey !important;
+  opacity: 30% !important;
+}
+
+.carousel-control-prev:hover {
+  color: #ff0000 !important;/* color de fuente hover */
+}
+
+.carousel-control-prev::after {
+  content: "";
+  background: brown; /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: scale(0, 0);
+  transition: all 0.3s ease;
+}
+.carousel-control-prev:hover::after {
+  transition: all 0.3s ease-out;
+  transform: scale(1, 1);
 }
 
 .carousel-item {
   border: solid 4px rgb(71, 48, 48);
+  justify-content: center !important;
 }
 
 .carousel-item h5 {
@@ -79,17 +126,16 @@ img.w-100.d-block{
   background-color: white;
 }
 
-#carouselExampleCaptions {
-  width: 40% !important;
-  height: 30% !important;
-  justify-content: center !important;
-  align-items: center !important;
-  background-color: #fff;
+img.w-100.d-block {
+  object-fit: cover;
+  height: 600px !important;
+  width: 500px !important;
+  padding: 20% I !important;
 }
 
 .carousel-item p {
   color:black !important;
-  background-color: whitesmoke;
+  background-color: white;
   width: 400px !important;
 }
 
@@ -343,58 +389,4 @@ textarea#msg {
   padding-bottom: 10px;
   border-bottom: solid 2px #513d38;
 }
-
-
-
-/*
-@media (max-width: 1280px) {
-  .logo {
-    margin-left: 40px;
-    width: 20%;
-  }
-}
-
-@media (max-width: 1028px) {
-  nav ul li {
-    float: left;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    padding-right: 30px;
-    font-weight: bold;
-    transition: 2s;
-  }
-}
-
-@media (max-width: 872) {
-  nav ul li {
-    float: left;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    padding-right: 30px;
-    font-weight: bold;
-    transition: 2s;
-  }
-}
-
-@media (max-width: 850) {
-  nav ul li {
-    float: left;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    padding-right: 30px;
-    font-weight: bold;
-    transition: 2s;
-  }
-}
-
-#titulo {
-  text-transform: uppercase;
-  color: rgb(71, 48, 48);
-  text-shadow: 1px 2px 2px sandybrown;
-  font-size: 24px;
-  align-items: center;
-  margin-bottom: 0;
-}
-
-*/
 
