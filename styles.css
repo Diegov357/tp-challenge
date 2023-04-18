@@ -11,8 +11,6 @@ h2 {
 
 /*HEADER*/
 
-
-
 #contenedor {
   display: flex;
   align-items: center;
@@ -45,6 +43,56 @@ li#links {
   margin: 0 !important;
 }
 
+img.w-100.d-block{
+  object-fit: cover;
+  
+}
+
+#carousel-all {
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: blue !important;
+  opacity: 90%;
+}
+
+.carousel-control-next {
+  background-color: red !important;
+  opacity: 90%;
+}
+
+.carousel-control-prev  {
+  background-color: blue !important;
+  opacity: 90%;
+}
+
+.carousel-item {
+  border: solid 4px rgb(71, 48, 48);
+}
+
+.carousel-item h5 {
+  color:brown;
+  font-weight: bolder;
+  background-color: white;
+}
+
+#carouselExampleCaptions {
+  width: 40% !important;
+  height: 30% !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: #fff;
+}
+
+.carousel-item p {
+  color:black !important;
+  background-color: whitesmoke;
+  width: 400px !important;
+}
+
 nav.navbar {
   justify-self: center;
 }
@@ -69,11 +117,11 @@ nav ul li a {
   text-decoration: none;
 }
 
-  header li:hover {
+header li:hover {
     font-size: 28px;
  }
 
-  #titulo {
+#titulo {
     text-transform: uppercase;
     color: rgb(71, 48, 48);
     text-shadow: 1px 2px 2px sandybrown;
