@@ -240,10 +240,9 @@ img.w-100.d-block{
 }
 
 img.w-100.d-block {
-  object-fit: cover;
+  object-fit: fill;
   height: 600px !important;
   width: 500px !important;
-  padding: 20% I !important;
 }
 
 .carousel-item p {
@@ -269,6 +268,7 @@ img.w-100.d-block {
   border-top: solid 2px #283747;
   background-color: #9E4735;
   padding-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .footer h2{
@@ -413,4 +413,8 @@ color: #154360;
 
 /* RESPONSIVE */
 
-
+@media screen and (max-width: 380px) {
+  .carousel-item {
+    size-adjust: 20% !important;
+  }
+}
