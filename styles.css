@@ -413,8 +413,27 @@ color: #154360;
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 380px) {
-  .carousel-item {
-    size-adjust: 20% !important;
-  }
+@media (max-width: 480px) { 
+  img.w-100.d-block {
+    object-fit: fill;
+    height: 500px !important;
+    width: 299px !important;
+}
+
+#titproduct {
+  font-size: 34px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: #e2c077;
+}
+
+.contenido p {
+color: transparent;
+height: 0;
+}
+
+.footer {
+  font-weight: bolder;
+  color: white;
+}
 }
