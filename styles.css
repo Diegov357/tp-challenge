@@ -36,6 +36,10 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
   justify-content: center !important;
 }
 
+.navbar-light .navbar-toggler {
+  border-color: white !important;
+}
+
 li#links {
   display: flex !important;
   justify-content: center !important;
@@ -122,6 +126,19 @@ header li:hover {
   }
 
   #titproduct {
+    color: beige;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 3px 2px #ad691a;
+    padding-top: 20px;
+    text-transform: uppercase;
+    border-top: 2px solid #513d38;
+    background-color: #5e0a0a;
+    padding-bottom: 20px;
+    border-bottom: solid 2px #513d38;
+  }
+
+  #titproductform {
     color: beige;
     font-size: 24px;
     font-weight: bold;
@@ -414,10 +431,26 @@ color: #154360;
 /* RESPONSIVE */
 
 @media (max-width: 480px) { 
-  img.w-100.d-block {
+
+  .logo img {
+    height: 80px;
+    width: 100px;
+  }
+     
+  .carrito img {
+    height: 60px;
+    width: 60px;
+  }
+
+img.w-100.d-block {
     object-fit: fill;
     height: 500px !important;
     width: 299px !important;
+}
+
+#presentacion {
+  color: transparent;
+  height: 0;
 }
 
 #titproduct {
@@ -427,13 +460,22 @@ color: #154360;
   color: #e2c077;
 }
 
-.contenido p {
-color: transparent;
-height: 0;
+#titproductform {
+  font-size: 24px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: #e2c077;
+  flex-wrap: wrap;
 }
 
 .footer {
-  font-weight: bolder;
+  font-weight: lighter;
   color: white;
+  font-size: 14px;
+}
+
+.footer p {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 }
